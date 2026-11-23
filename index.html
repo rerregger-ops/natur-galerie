@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERDesign – Natur- &amp; Vogelillustrationen | Galerie &amp; DIY-Motive</title>
+  <meta name="description" content="Entdecke detailreiche Natur- und Vogelillustrationen von ERDesign – erhältlich auf Tassen, Postern, Stickern und als DIY-Vorlagen." />
+  <style>
+    :root {
+      --bg: #f8f7f4;
+      --card: #ffffff;
+      --text: #1f2421;
+      --muted: #5a6560;
+      --accent: #2f5d50;
+      --accent-hover: #23473d;
+      --accent-soft: #e6efe9;
+      --border: #e2e0d8;
+      --shadow: 0 6px 20px rgba(31, 36, 33, 0.06);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 20px 32px;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.01em;
+      color: var(--accent);
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .hero {
+      max-width: 720px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+      line-height: 1.2;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      margin: 26px 0 22px;
+      flex-wrap: wrap;
+    }
+
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .search-box input {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      font-size: 0.92rem;
+      min-width: 230px;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 22px;
+      padding-bottom: 48px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card-img-wrap {
+      aspect-ratio: 4 / 3;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    .card-img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+
+    .card-body {
+      padding: 18px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-title {
+      font-size: 1.18rem;
+      margin-bottom: 4px;
+    }
+
+    .latin {
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .card-desc {
+      font-size: 0.94rem;
+      color: #363e3a;
+      margin-bottom: 12px;
+    }
+
+    .fact-box {
+      background: var(--bg);
+      border-left: 3px solid var(--accent);
+      padding: 9px 12px;
+      font-size: 0.86rem;
+      color: var(--muted);
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 16px;
+    }
+
+    .actions {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .btn-primary {
+      display: block;
+      text-align: center;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      padding: 10px 14px;
+      border-radius: 9px;
+      transition: background 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+    }
+
+    .secondary-links {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-secondary {
+      flex: 1;
+      text-align: center;
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.83rem;
+      font-weight: 500;
+      padding: 7px 10px;
+      border-radius: 8px;
+      background: #fff;
+      transition: border-color 0.15s ease;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .empty {
+      text-align: center;
+      padding: 48px 20px;
+      color: var(--muted);
+      grid-column: 1 / -1;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--card);
+      padding: 28px 20px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    details p {
+      margin-top: 8px;
+      max-width: 520px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">ERDesign · Natur-Galerie</div>
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn active" data-lang="de">DE</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+      <div class="hero">
+        <h1 id="hero-title">Heimische Vogel- &amp; Naturillustrationen</h1>
+        <p id="hero-sub">Kuratierte Übersicht meiner Naturmotive mit Steckbriefen – direkt erhältlich auf Tassen, Stickern, Postern sowie als digitale DIY-Vorlagen.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <div class="filters" id="filter-bar"></div>
+      <div class="search-box">
+        <input type="search" id="search-input" placeholder="Motiv oder Vogelart suchen…" />
+      </div>
+    </div>
+
+    <section class="grid" id="gallery-grid" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong id="footer-copy">© 2026 ERDesign – Alle Illustrationen urheberrechtlich geschützt.</strong><br />
+        <span id="footer-note">Klicke auf ein Motiv, um direkt zu den verfügbaren Produkten auf Redbubble, TeePublic oder Etsy zu gelangen.</span>
+      </div>
+      <details>
+        <summary id="imprint-toggle">Impressum &amp; Rechtliches</summary>
+        <p>
+          <strong>Angaben gemäß § 5 ECG / § 25 MedienG (Österreich):</strong><br />
+          Vorname Nachname (bitte ergänzen)<br />
+          Straße Hausnummer, PLZ Ort, Österreich<br />
+          E-Mail: deine-mail@beispiel.at<br />
+          Unternehmensgegenstand: Design &amp; digitale Illustrationen
+        </p>
+      </details>
+    </div>
+  </footer>
+
+  <script>
+    const UI_TEXT = {
+      de: {
+        heroTitle: "Heimische Vogel- & Naturillustrationen",
+        heroSub: "Kuratierte Übersicht meiner Naturmotive mit Steckbriefen – direkt erhältlich auf Tassen, Stickern, Postern sowie als digitale DIY-Vorlagen.",
+        searchPlaceholder: "Motiv oder Vogelart suchen…",
+        allCategory: "Alle Motive",
+        btnRedbubble: "Auf Redbubble ansehen →",
+        btnTeepublic: "TeePublic",
+        btnEtsy: "DIY-Datei (Etsy)",
+        empty: "Keine passenden Motive gefunden.",
+        footerNote: "Klicke auf ein Motiv, um direkt zu den verfügbaren Produkten auf Redbubble, TeePublic oder Etsy zu gelangen.",
+        imprint: "Impressum & Rechtliches"
+      },
+      en: {
+        heroTitle: "Native Bird & Nature Illustrations",
+        heroSub: "Curated gallery of my wildlife and botanical illustrations with species notes – available on mugs, stickers, prints, and as DIY digital files.",
+        searchPlaceholder: "Search artwork or species…",
+        allCategory: "All Artworks",
+        btnRedbubble: "View on Redbubble →",
+        btnTeepublic: "TeePublic",
+        btnEtsy: "DIY File (Etsy)",
+        empty: "No matching artworks found.",
+        footerNote: "Click any artwork to view available products on Redbubble, TeePublic, or DIY files on Etsy.",
+        imprint: "Imprint & Legal Notice"
+      }
+    };
+
+    let state = {
+      lang: "de",
+      category: "all",
+      query: "",
+      items: []
+    };
+
+    async function init() {
+      try {
+        const res = await fetch("./motive.json");
+        state.items = await res.json();
+        render();
+      } catch (err) {
+        document.getElementById("gallery-grid").innerHTML =
+          '<div class="empty">Fehler beim Laden der Datei <code>motive.json</code>.</div>';
+      }
+    }
+
+    function render() {
+      const t = UI_TEXT[state.lang];
+      document.documentElement.lang = state.lang;
+      document.getElementById("hero-title").textContent = t.heroTitle;
+      document.getElementById("hero-sub").textContent = t.heroSub;
+      document.getElementById("search-input").placeholder = t.searchPlaceholder;
+      document.getElementById("footer-note").textContent = t.footerNote;
+      document.getElementById("imprint-toggle").textContent = t.imprint;
+
+      const categories = [...new Set(state.items.map(item => item.category[state.lang]))];
+      const filterBar = document.getElementById("filter-bar");
+      filterBar.innerHTML = "";
+
+      const allBtn = document.createElement("button");
+      allBtn.className = "filter-btn" + (state.category === "all" ? " active" : "");
+      allBtn.textContent = t.allCategory;
+      allBtn.onclick = () => { state.category = "all"; render(); };
+      filterBar.appendChild(allBtn);
+
+      categories.forEach(cat => {
+        const btn = document.createElement("button");
+        btn.className = "filter-btn" + (state.category === cat ? " active" : "");
+        btn.textContent = cat;
+        btn.onclick = () => { state.category = cat; render(); };
+        filterBar.appendChild(btn);
+      });
+
+      const q = state.query.trim().toLowerCase();
+      const filtered = state.items.filter(item => {
+        const catMatch = state.category === "all" || item.category[state.lang] === state.category;
+        const textBlob = [
+          item.title[state.lang],
+          item.latin || "",
+          item.description[state.lang],
+          item.fact[state.lang]
+        ].join(" ").toLowerCase();
+        const queryMatch = !q || textBlob.includes(q);
+        return catMatch && queryMatch;
+      });
+
+      const grid = document.getElementById("gallery-grid");
+      if (!filtered.length) {
+        grid.innerHTML = `<div class="empty">${t.empty}</div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => {
+        const secondary = [];
+        if (item.links.teepublic) {
+          secondary.push(`<a class="btn-secondary" href="${item.links.teepublic}" target="_blank" rel="noopener">${t.btnTeepublic}</a>`);
+        }
+        if (item.links.etsy) {
+          secondary.push(`<a class="btn-secondary" href="${item.links.etsy}" target="_blank" rel="noopener">${t.btnEtsy}</a>`);
+        }
+
+        return `
+          <article class="card">
+            <div class="card-img-wrap">
+              <span class="badge">${item.category[state.lang]}</span>
+              <img src="${item.image}" alt="${item.title[state.lang]}" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">${item.title[state.lang]}</h2>
+              ${item.latin ? `<div class="latin">${item.latin}</div>` : ""}
+              <p class="card-desc">${item.description[state.lang]}</p>
+              <div class="fact-box">${item.fact[state.lang]}</div>
+              <div class="actions">
+                <a class="btn-primary" href="${item.links.redbubble}" target="_blank" rel="noopener">${t.btnRedbubble}</a>
+                ${secondary.length ? `<div class="secondary-links">${secondary.join("")}</div>` : ""}
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".lang-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.lang = btn.dataset.lang;
+        state.category = "all";
+        render();
+      });
+    });
+
+    document.getElementById("search-input").addEventListener("input", e => {
+      state.query = e.target.value;
+      render();
+    });
+
+    init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+[
+  {
+    "id": "stieglitz",
+    "category": {
+      "de": "Singvögel",
+      "en": "Songbirds"
+    },
+    "title": {
+      "de": "Stieglitz (Distelfink)",
+      "en": "European Goldfinch"
+    },
+    "latin": "Carduelis carduelis",
+    "image": "./images/Stieglitz-dekokissen.jpg",
+    "description": {
+      "de": "Detailreiche Aquarell-Illustration eines Stieglitzes mit roter Gesichtsmaske und leuchtend gelber Flügelbinde – erhältlich auf Dekokissen, Tassen, Stickern & mehr.",
+      "en": "Detailed watercolor illustration of a European goldfinch with its red face mask and bright yellow wing bar – available on throw pillows, mugs, stickers & more."
+    },
+    "fact": {
+      "de": "Beobachtungstipp: Liebt verblühte Disteln, Karden und Sonnenblumenkerne im naturnahen Garten.",
+      "en": "Field note: Particularly fond of wild teasels, thistles, and sunflower seeds in natural gardens."
+    },
+    "links": {
+      "redbubble": "https://www.redbubble.com/de/i/dekokissen/Handgezeichneter-Stieglitz-Natur-und-Vogelillustration-von-Pencildrawing/185023434/xwxm?asc=u",
+      "teepublic": "",
+      "etsy": ""
+    }
+  },
+  {
+    "id": "hausrotschwanz",
+    "category": {
+      "de": "Singvögel",
+      "en": "Songbirds"
+    },
+    "title": {
+      "de": "Hausrotschwanz / Rotschwanz",
+      "en": "Redstart"
+    },
+    "latin": "Phoenicurus ochruros",
+    "image": "./images/Gartenrotschwanz-dekokissen.jpg",
+    "description": {
+      "de": "Malerische Aquarell-Illustration eines Rotschwanzes auf einem bemoosten Baumstumpf mit frischen Blättern – erhältlich auf Dekokissen, Tassen, Stickern & mehr.",
+      "en": "Painterly watercolor illustration of a redstart perched on a mossy stump with fresh leaves – available on throw pillows, mugs, stickers & more."
+    },
+    "fact": {
+      "de": "Beobachtungstipp: Häufig in halboffenen Landschaften, Gärten sowie an Mauern und alten Bäumen zu entdecken.",
+      "en": "Field note: Often spotted in semi-open landscapes, gardens, and near stone walls and mature trees."
+    },
+    "links": {
+      "redbubble": "https://www.redbubble.com/de/i/dekokissen/Handgezeichneter-Hausrotschwanz-Natur-und-Vogelillustration-von-Pencildrawing/185023826/xwxm?asc=u",
+      "teepublic": "",
+      "etsy": ""
+    }
+  },
+  {
+    "id": "kuckuck",
+    "category": {
+      "de": "Wiesen- & Waldvögel",
+      "en": "Meadow & Woodland Birds"
+    },
+    "title": {
+      "de": "Kuckuck auf Zaunpfahl",
+      "en": "Common Cuckoo on Fence Post"
+    },
+    "latin": "Cuculus canorus",
+    "image": "./images/Kuckuck-dekokissen.jpg",
+    "description": {
+      "de": "Detailreiche Aquarell-Darstellung eines Kuckucks auf einem alten Zaunpfahl vor zart grün-beigem Hintergrund – erhältlich auf Dekokissen, Tassen, Stickern & mehr.",
+      "en": "Detailed watercolor depiction of a common cuckoo perched on an old fence post against a soft green-beige wash – available on throw pillows, mugs, stickers & more."
+    },
+    "fact": {
+      "de": "Beobachtungstipp: Frisst mit Vorliebe stark behaarte Raupen, die viele andere Vögel meiden.",
+      "en": "Field note: Particularly partial to hairy caterpillars that many other birds avoid."
+    },
+    "links": {
+      "redbubble": "https://www.redbubble.com/de/i/dekokissen/Handgezeichneter-Kuckuck-auf-Zaunpfahl-Natur-und-Vogelillustration-von-Pencildrawing/185024236/xwxm?asc=u",
+      "teepublic": "",
+      "etsy": ""
+    }
+  },
+  {
+    "id": "stare",
+    "category": {
+      "de": "Wiesen- & Gartenvögel",
+      "en": "Meadow & Garden Birds"
+    },
+    "title": {
+      "de": "Zwei junge Stare auf Baumstamm",
+      "en": "Two Young Starlings on Tree Trunk"
+    },
+    "latin": "Sturnus vulgaris",
+    "image": "./images/Stare-dekokissen.jpg",
+    "description": {
+      "de": "Malerische Illustration zweier junger Stare auf einem alten Baumstamm vor frischem Grün – erhältlich auf Dekokissen, Tassen, Stickern & mehr.",
+      "en": "Painterly illustration of two young starlings on an old tree trunk against a fresh green wash – available on throw pillows, mugs, stickers & more."
+    },
+    "fact": {
+      "de": "Beobachtungstipp: Ein begnadeter Stimmenimitator, der Rufe anderer Vögel und Umweltgeräusche in seinen Gesang einbaut.",
+      "en": "Field note: A gifted vocal mimic capable of weaving other birds' calls and ambient sounds into its song."
+    },
+    "links": {
+      "redbubble": "https://www.redbubble.com/de/i/dekokissen/Zwei-junge-Stare-auf-altem-Baumstamm-Natur-und-Vogelillustration-von-Pencildrawing/185043694/xwxm?asc=u",
+      "teepublic": "",
+      "etsy": ""
+    }
+  },
+  {
+    "id": "wiedehopf",
+    "category": {
+      "de": "Wiesen- & Waldvögel",
+      "en": "Meadow & Woodland Birds"
+    },
+    "title": {
+      "de": "Wiedehopf auf der Wiese",
+      "en": "Eurasian Hoopoe in Meadow"
+    },
+    "latin": "Upupa epops",
+    "image": "./images/Wiedehopf-dekokissen.jpg",
+    "description": {
+      "de": "Ausdrucksstarke Aquarell-Illustration eines Wiedehopfs mit Federhaube und schwarz-weiß gestreiftem Gefieder – erhältlich auf Dekokissen, Tassen, Stickern & mehr.",
+      "en": "Expressive watercolor illustration of a Eurasian hoopoe with crest feathers and black-and-white barred plumage – available on throw pillows, mugs, stickers & more."
+    },
+    "fact": {
+      "de": "Beobachtungstipp: Stochert mit seinem langen, leicht gebogenen Schnabel im Boden nach Engerlingen und Insektenlarven.",
+      "en": "Field note: Uses its long, slightly curved bill to probe soil for grubs and insect larvae."
+    },
+    "links": {
+      "redbubble": "https://www.redbubble.com/de/i/dekokissen/Handgezeichneter-Wiedehopf-auf-Wiese-Natur-und-Vogelillustration-von-Pencildrawing/185044110/xwxm?asc=u",
+      "teepublic": "",
+      "etsy": ""
+    }
+  },
+  {
+    "id": "waldbaumlaeufer",
+    "category": {
+      "de": "Baum- & Waldvögel",
+      "en": "Tree & Woodland Birds"
+    },
+    "title": {
+      "de": "Waldbaumläufer am Baumstamm",
+      "en": "Eurasian Treecreeper on Tree Trunk"
+    },
+    "latin": "Certhia familiaris",
+    "image": "./images/Waldbaumlaeufer-dekokissen.jpg",
+    "description": {
+      "de": "Feine Aquarell-Illustration eines Waldbaumläufers mit gebogenem Schnabel an rauer Baumrinde – erhältlich auf Dekokissen, Tassen, Stickern & mehr.",
+      "en": "Fine watercolor illustration of a Eurasian treecreeper with its curved bill on rough bark – available on throw pillows, mugs, stickers & more."
+    },
+    "fact": {
+      "de": "Beobachtungstipp: Klettert in engen Spiralen Baumstämme hinauf und sucht Ritzen nach winzigen Insekten und Spinnen ab.",
+      "en": "Field note: Climbs tree trunks in tight spirals, probing bark crevices for tiny insects and spiders."
+    },
+    "links": {
+      "redbubble": "https://www.redbubble.com/de/i/dekokissen/Handgezeichneter-Waldbauml%C3%A4ufer-am-Baumstamm-Natur-und-Vogelillustration-von-Pencildrawing/185152170/xwxm?asc=u",
+      "teepublic": "",
+      "etsy": ""
+    }
+  },
+  {
+    "id": "schwanzmeise",
+    "category": {
+      "de": "Singvögel",
+      "en": "Songbirds"
+    },
+    "title": {
+      "de": "Schwanzmeise auf Zweig",
+      "en": "Long-Tailed Tit on Branch"
+    },
+    "latin": "Aegithalos caudatus",
+    "image": "./images/Schwanzmeise.jpg",
+    "description": {
+      "de": "Zarte Aquarell-Illustration einer Schwanzmeise mit langem Schwanzgefieder auf feinen Zweigen – erhältlich auf Dekokissen, Tassen, Stickern & mehr.",
+      "en": "Delicate watercolor illustration of a long-tailed tit perched among fine twigs – available on throw pillows, mugs, stickers & more."
+    },
+    "fact": {
+      "de": "Beobachtungstipp: Außerhalb der Brutzeit oft in lebhaften Trupps unterwegs, die leise „srih“-Rufe austauschen.",
+      "en": "Field note: Often travels in lively flocks outside the breeding season, exchanging soft 'srih' calls."
+    },
+    "links": {
+      "redbubble": "https://www.redbubble.com/de/i/dekokissen/Handgezeichnete-Schwanzmeise-auf-Zweig-Natur-und-Vogelillustration-von-Pencildrawing/185154219/xwxm?asc=u",
+      "teepublic": "",
+      "etsy": ""
+    }
+  },
+  {
+    "id": "kleiber",
+    "category": {
+      "de": "Baum- & Gartenvögel",
+      "en": "Tree & Garden Birds"
+    },
+    "title": {
+      "de": "Kleiber auf altem Holz",
+      "en": "Eurasian Nuthatch on Aged Wood"
+    },
+    "latin": "Sitta europaea",
+    "image": "./images/Kleiber-dekokissen.jpg",
+    "description": {
+      "de": "Malerische Aquarell-Illustration eines Kleibers auf verwittertem Holz – erhältlich auf Dekokissen, Tassen, Stickern & mehr.",
+      "en": "Painterly watercolor illustration of a Eurasian nuthatch perched on weathered wood – available on throw pillows, mugs, stickers & more."
+    },
+    "fact": {
+      "de": "Beobachtungstipp: Der einzige heimische Vogel, der kopfüber Baumstämme hinunterklettern kann.",
+      "en": "Field note: The only native bird capable of climbing headfirst down tree trunks."
+    },
+    "links": {
+      "redbubble": "https://www.redbubble.com/de/i/dekokissen/Handgezeichneter-Kleiber-auf-Holz-Natur-und-Vogelillustration-von-Pencildrawing/185231486/xwxm?asc=u",
+      "teepublic": "",
+      "etsy": ""
+    }
+  },
+  {
+    "id": "turmfalke",
+    "category": {
+      "de": "Greifvögel",
+      "en": "Raptors"
+    },
+    "title": {
+      "de": "Turmfalke auf Holzpfosten",
+      "en": "Common Kestrel on Wooden Post"
+    },
+    "latin": "Falco tinnunculus",
+    "image": "./images/Turmfalke-dekokissen.jpg",
+    "description": {
+      "de": "Malerische Illustration eines Turmfalken auf einem alten Holzpfosten vor grünem Aquarell-Hintergrund – erhältlich auf Dekokissen, Tassen, Stickern & mehr.",
+      "en": "Painterly illustration of a common kestrel perched on a weathered post against a green watercolor background – available on throw pillows, mugs, stickers & more."
+    },
+    "fact": {
+      "de": "Beobachtungstipp: Bekannt für seinen „Rüttelflug“, bei dem er mit schnellen Flügelschlägen auf der Stelle in der Luft steht.",
+      "en": "Field note: Known for hovering in mid-air with rapid wingbeats while scanning open ground for prey."
+    },
+    "links": {
+      "redbubble": "https://www.redbubble.com/de/i/dekokissen/Handgezeichneter-Turmfalke-auf-Holzpfosten-Natur-und-Vogelillustration-von-Pencildrawing/185233661/xwxm?asc=u",
+      "teepublic": "",
+      "etsy": ""
+    }
+  }
+]
