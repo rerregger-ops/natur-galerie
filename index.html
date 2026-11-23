@@ -98,11 +98,24 @@
 
     .controls {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
       gap: 14px;
       margin: 26px 0 22px;
-      flex-wrap: wrap;
+    }
+
+    .search-box input {
+      width: 100%;
+      max-width: 460px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      font-size: 0.94rem;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent);
     }
 
     .filters {
@@ -130,20 +143,6 @@
       background: var(--accent);
       border-color: var(--accent);
       color: #fff;
-    }
-
-    .search-box input {
-      padding: 8px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--card);
-      font-size: 0.92rem;
-      min-width: 230px;
-      outline: none;
-    }
-
-    .search-box input:focus {
-      border-color: var(--accent);
     }
 
     .grid {
@@ -312,6 +311,15 @@
       margin-top: 8px;
       max-width: 520px;
     }
+
+    details a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    details a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -333,10 +341,10 @@
 
   <main class="container">
     <div class="controls">
-      <div class="filters" id="filter-bar"></div>
       <div class="search-box">
         <input type="search" id="search-input" placeholder="Motiv oder Vogelart suchen…" />
       </div>
+      <div class="filters" id="filter-bar"></div>
     </div>
 
     <section class="grid" id="gallery-grid" aria-live="polite"></section>
@@ -352,9 +360,9 @@
         <summary id="imprint-toggle">Impressum &amp; Rechtliches</summary>
         <p>
           <strong>Angaben gemäß § 5 ECG / § 25 MedienG (Österreich):</strong><br />
-          Vorname Nachname (bitte ergänzen)<br />
-          Straße Hausnummer, PLZ Ort, Österreich<br />
-          E-Mail: deine-mail@beispiel.at<br />
+          Roland Erregger<br />
+          [Straße Hausnummer, PLZ] Ligist, Österreich<br />
+          E-Mail: <a href="mailto:r.erregger@gmail.com">r.erregger@gmail.com</a><br />
           Unternehmensgegenstand: Design &amp; digitale Illustrationen
         </p>
       </details>
