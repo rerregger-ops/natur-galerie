@@ -54,8 +54,8 @@
   {
     "id": "kuckuck",
     "category": {
-      "de": "Wiesen- & Waldvögel",
-      "en": "Meadow & Woodland Birds"
+      "de": "Wiesenvögel",
+      "en": "Meadow Birds"
     },
     "title": {
       "de": "Kuckuck auf Zaunpfahl",
@@ -80,8 +80,8 @@
   {
     "id": "stare",
     "category": {
-      "de": "Wiesen- & Gartenvögel",
-      "en": "Meadow & Garden Birds"
+      "de": "Wald- & Gartenvögel",
+      "en": "Woodland & Garden Birds"
     },
     "title": {
       "de": "Zwei junge Stare auf Baumstamm",
@@ -106,8 +106,8 @@
   {
     "id": "wiedehopf",
     "category": {
-      "de": "Wiesen- & Waldvögel",
-      "en": "Meadow & Woodland Birds"
+      "de": "Wiesenvögel",
+      "en": "Meadow Birds"
     },
     "title": {
       "de": "Wiedehopf auf der Wiese",
@@ -132,8 +132,8 @@
   {
     "id": "waldbaumlaeufer",
     "category": {
-      "de": "Baum- & Waldvögel",
-      "en": "Tree & Woodland Birds"
+      "de": "Wald- & Gartenvögel",
+      "en": "Woodland & Garden Birds"
     },
     "title": {
       "de": "Waldbaumläufer am Baumstamm",
@@ -184,8 +184,8 @@
   {
     "id": "kleiber",
     "category": {
-      "de": "Baum- & Gartenvögel",
-      "en": "Tree & Garden Birds"
+      "de": "Wald- & Gartenvögel",
+      "en": "Woodland & Garden Birds"
     },
     "title": {
       "de": "Kleiber auf altem Holz",
@@ -234,3 +234,6 @@
     }
   }
 ]
+```[cite: 7]
+
+Falls du an der `motive.json` selbst noch etwas ändern möchtest (z. B. weitere Motive hinzufügen, Kategorien anders benennen oder Shop-Links ergänzen) oder falls dir bei der Darstellung auf der Seite noch etwas auffällt, sag einfach Bescheid.
